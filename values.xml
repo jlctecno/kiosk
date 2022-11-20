@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<vehicleList>
+    <vehicle id="1">
+        <vehicleName>AUTOS</vehicleName>
+        <vehicleHour>690,00</vehicleHour>
+        <vehicleFirstHour>690,00</vehicleFirstHour>
+        <vehicle5MinFraction>57,50</vehicle5MinFraction>
+        <vehicle12Hours>4140,00</vehicle12Hours>
+        <vehicle24Hours>8280,00</vehicle24Hours>
+    </vehicle>
+    <vehicle id="2">
+        <vehicleName>CAMIONETA</vehicleName>
+        <vehicleHour>1020,00</vehicleHour>
+        <vehicleFirstHour>1020,00</vehicleFirstHour>
+        <vehicle5MinFraction>85,00</vehicle5MinFraction>
+        <vehicle12Hours>6120,00</vehicle12Hours>
+        <vehicle24Hours>12240,00</vehicle24Hours>
+    </vehicle>
+    <vehicle id="3">
+        <vehicleName>MOTOS</vehicleName>
+        <vehicleHour>260,00</vehicleHour>
+        <vehicleFirstHour>260,00</vehicleFirstHour>
+        <vehicle5MinFraction>21,67</vehicle5MinFraction>
+        <vehicle12Hours>1560,00</vehicle12Hours>
+        <vehicle24Hours>3120,00</vehicle24Hours>
+    </vehicle>
+    <vehicle id="4">
+        <vehicleName>Bicicletas</vehicleName>
+        <vehicleHour>Sin cargo</vehicleHour>
+        <vehicleFirstHour>Sin cargo</vehicleFirstHour>
+        <vehicle5MinFraction>Sin cargo</vehicle5MinFraction>
+        <vehicle12Hours>Sin cargo</vehicle12Hours>
+        <vehicle24Hours>Sin cargo</vehicle24Hours>
+    </vehicle>
+</vehicleList>

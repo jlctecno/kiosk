@@ -1,0 +1,189 @@
+body {
+    font-family: Georgia, Times, serif;
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+p {
+    margin-bottom: 0em;
+}
+
+.container {
+    width: 90%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #252525;
+    color: white;
+    padding: 1rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}  
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+}
+
+.logo2 {
+    object-fit: contain;
+    margin-left: 75px;
+    max-height: 160px;
+    padding: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;   
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 100px;
+}
+
+.navigation ul li a:hover {
+    background: #4a4a4a;
+}
+
+.main {
+    padding-top: 14rem;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 0,75rem 0;
+    text-align: center;
+    margin-top: 0,5em;
+    font-size: small;
+}
+
+mark.celeste {
+    font-size: 2.5rem;
+    color: lightskyblue;
+    background: none;
+}
+
+mark.negro {
+    font-size: 2rem;
+    color: #252525;
+    background: none;
+}
+
+.Foot-first {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    text-align: left;
+    font-family: arial, sans-serif;
+    font-size: 1,5rem;
+}
+
+.Foot-second {
+    text-align: left;
+    margin-left: 0rem;
+    font-family: arial, sans-serif;
+    font-size: 1,5rem;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    }
+
+    .navigation ul li {
+        display: block;   
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 100px;
+    }
+    
+    .navigation ul li a:hover {
+        background: #4a4a4a;
+    }
+
+}
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 50px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  table, th{
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  td {
+    border: 2px solid black;
+    padding: 20px;
+    font-size: xxx-large;
+    color: #4a4a4a;
+  }

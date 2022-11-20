@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<valuesList>
+    <HourName>POR HORA</HourName>
+    <FirstHourName>PRIMER HORA</FirstHourName>
+    <t5MinFractionName>FRACCION 5 MINUTOS</t5MinFractionName>
+    <t12HoursName>ESTADIA 12 hs</t12HoursName>
+    <t24HoursName>ESTADIA 24 hs</t24HoursName>
+
+    <autoName>AUTOS</autoName>
+    <autoHour>690,00</autoHour>
+    <autoFirstHour>690,00</autoFirstHour>
+    <auto5MinFraction>57,50</auto5MinFraction>
+    <auto12Hours>4.140,00</auto12Hours>
+    <auto24Hours>8.280,00</auto24Hours>
+
+    <pickupName>CAMIONETA / SUV / 4x4</pickupName>
+    <pickupHour>1.020,00</pickupHour>
+    <pickupFirstHour>1.020,00</pickupFirstHour>
+    <pickup5MinFraction>85,00</pickup5MinFraction>
+    <pickup12Hours>6.120,00</pickup12Hours>
+    <pickup24Hours>12.240,00</pickup24Hours>
+    
+    <motoName>MOTOS</motoName>
+    <motoHour>260,00</motoHour>
+    <motoFirstHour>260,00</motoFirstHour>
+    <moto5MinFraction>21,67</moto5MinFraction>
+    <moto12Hours>1.560,00</moto12Hours>
+    <moto24Hours>3.120,00</moto24Hours>
+ 
+    <biciName>BICICLETAS</biciName>
+    <biciHour>SIN CARGO</biciHour>
+    <biciFirstHour>SIN CARGO</biciFirstHour>
+    <bici5MinFraction>SIN CARGO</bici5MinFraction>
+    <bici12Hours>SIN CARGO</bici12Hours>
+    <bici24Hours>SIN CARGO</bici24Hours>
+</valuesList>

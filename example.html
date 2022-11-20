@@ -1,0 +1,58 @@
+### HTML
+
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /> 
+            <script type="text/javascript" src="jquery.js"></script> 
+            <script type="text/javascript" src="main.js"></script> 
+    </head> 
+<body> 
+    <p>Here i have two objects with mydynvar1, mydynvar2</p> 
+        <table> 
+            <tr> 
+                <td>mydynvar1 value: <span id="mydynvar1" /></td> </tr> 
+            <tr> 
+                <td>mydynvar2 value: <span id="mydynvar2" /></td> </tr> 
+            </table> 
+            <p> you can get objects by name, id, etc </p> 
+            <p> For static variables, you can just insert them into the actual body of the HTML, which is a more familiar way from Microchip's examples: </p> 
+            <table> 
+                <tr> <td>TCPIP Stack Version: ~version~</td> </tr> <tr> <td>Build Date: ~builddate~</td> </tr> 
+            </table> 
+            <p> Obviouslly, you can also add the variables into the data.xml and have them dynamically update, but for these variables, 
+                it's a waste of resources; they will only need to be updated once. </p> 
+            <p>THis example is presented to you by DmitriK and use this example at your own risk :).  
+                I'm in no way affiliated with jQuery or Microchip; this is just an example.</p>    
+</body> 
+</html>
+
+
+### MAIN:JS
+
+readData(); 
+//initiate first read without any delay so we don't get blank fields on load. 
+//You can also call this from 'body onLoad', but I prefer to keep my javascript stuff in one file, for many reasons 
+function readData() { 
+    //ajax GET request to load the data.xml into xmlcontents var 
+    $.get('data.xml', function(xmlcontents) { 
+                //you can read jQuery docs to understand the syntax of the next line 
+                //but in summary you have a local object directly named localdynvar1 so you can access it using # prefix 
+                //.find() searches for an XML tag, which in our case are xml_tag1, xml_tag2 
+                $('#mydynvar1').html($(xmlcontents).find('xml_tag1').text()); 
+                $('#mydynvar2').html($(xmlcontents).find('xml_tag2').text());
+//obviouslly for large amounts of data or grouped/array format, you may want to use for...next here 
+//to simplify the display and to shorten the amount of code used.  From here on, it's just programming techniques. }); 
+//don't use setInterval here without canceling the previous timer first. setTimeout("readData()", 5000); 
+//you can use setTimeout or setInterval to read the contents of the XML again in, ie, 5 seconds }
+
+
+### DATA:XML
+
+<?xml version="1.0" encoding="utf-8"?> 
+<ourXMLdata> 
+    <xml_tag1>~this_value_came_from_xml_tag1_which_MCU_updates_dynamically~</xml_tag1> 
+    <xml_tag2>~this_value_came_from_xml_tag2_which_MCU_updates_dynamically~</xml_tag2> 
+</ourXMLdata> 
+
+
+
