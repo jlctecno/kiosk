@@ -1,0 +1,16 @@
+[Unit]
+Description=Chromium Kiosk
+Wants=graphical.target
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/manager/.Xauthority
+Type=simple
+ExecStart=/bin/bash /home/manager/kiosk/sripts/kiosk.sh
+Restart=on-abort
+User=manager
+Group=manager
+
+[Install]
+WantedBy=graphical.target
