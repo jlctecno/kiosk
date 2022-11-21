@@ -11,7 +11,13 @@ https://pimylifeup.com/raspberry-pi-kiosk/
 ---
 
 - Main script
-~/kiosk/kiosk.sh
+~/kiosk/scripts/kiosk.sh
 
-
-
+---
+# Start kiosk service
+sudo systemctl start kiosk.service
+# Start kiosk service
+sudo systemctl stop kiosk.service
+# Restart kiosk service - 
+# CAUTION: Mostly is better to do STOP & START.
+sudo systemctl restart kiosk.service
