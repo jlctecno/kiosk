@@ -3,7 +3,7 @@ readData();
 //You can also call this from 'body onLoad', but I prefer to keep my javascript stuff in one file, for many reasons 
 function readData() { 
     //ajax GET request to load the data.xml into xmlcontents var 
-    $.get('values2.xml', function(xmlcontents) { 
+    $.get('data/values2.xml', function(xmlcontents) { 
                 //you can read jQuery docs to understand the syntax of the next line
                 //but in summary you have a local object directly named localdynvar1 so you can access it using # prefix
                 //.find() searches for an XML tag, which in our case are xml_tag1, xml_tag2
